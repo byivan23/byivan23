@@ -6,7 +6,12 @@ require('dotenv').config();
 const Cita = require('./models/Cita');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://barber-diego.onrender.com'],
+  methods: ['GET', 'POST', 'DELETE'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)

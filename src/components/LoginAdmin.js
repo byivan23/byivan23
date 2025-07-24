@@ -13,14 +13,17 @@ const LoginAdmin = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const res = await fetch('http://localhost:4000/api/login', {
+    const res = await fetch('https://backend-barberr.onrender.com/api/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
+      body: JSON.stringify({ 
+        usuario: form.usuario, 
+        contrasena: form.contrasena 
+      })
     });
 
     if (res.ok) {
-        localStorage.setItem('isAdmin', true);
+      localStorage.setItem('isAdmin', true);
       navigate('/admin');
     } else {
       setError('Credenciales incorrectas');
@@ -41,12 +44,12 @@ const LoginAdmin = () => {
         />
 
         <input
-        type="password"
-        name="contrasena"
-        placeholder="Contraseña"
-        value={form.contrasena}
-        onChange={handleChange}
-        required
+          type="password"
+          name="contrasena"
+          placeholder="Contraseña"
+          value={form.contrasena}
+          onChange={handleChange}
+          required
         />
 
         <button type="submit">Iniciar Sesión</button>
