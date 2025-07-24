@@ -1,0 +1,28 @@
+/* Ubicacion.css */
+
+.contenedor-ubicacion {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    color: #222;
+  }
+  
+  .contenedor-ubicacion h1 {
+    color: #111;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  .contenedor-ubicacion p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+  }
+  
+  .mapa {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  

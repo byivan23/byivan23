@@ -1,0 +1,173 @@
+.home {
+    flex: 1;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #1e2a78 55%, #d72638 100%);
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slogan {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .slogan h1 {
+    color: #fff;
+    font-size: 2.6rem;
+    margin-bottom: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-shadow: 2px 4px 18px #0006;
+  }
+  
+  .slogan p {
+    font-size: 1.3rem;
+    color: #d72638;
+    font-weight: 600;
+    margin-top: 0.6em;
+    text-shadow: 1px 2px 8px #1117;
+  }
+  
+  .card {
+    background: #fff;
+    color: #222;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px #0003;
+    padding: 1.2rem 1.8rem;
+    margin: 1.2rem 0;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.18s;
+  }
+  
+  .card h2 {
+    color: #1e2a78;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+    letter-spacing: 1px;
+  }
+  
+  .card ul {
+    text-align: left;
+    margin: 0 auto 1em auto;
+    padding: 0 1em;
+  }
+  
+  .card li {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+  
+  .card button {
+    background: #d72638;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 0.75em 2.2em;
+    font-size: 1.12em;
+    margin-top: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s;
+  }
+  .card button:hover {
+    background: #1e2a78;
+  }
+  
+  /* Responsive */
+  @media (max-width: 700px) {
+    .home {
+      padding: 1rem 0.1rem;
+    }
+    .card {
+      padding: 1.1rem 0.8rem;
+      max-width: 97vw;
+    }
+    .slogan h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(30,42,120,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .modal-cita {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px #1e2a7830;
+    padding: 2rem 2.5rem;
+    width: 90vw;
+    max-width: 390px;
+    text-align: center;
+    position: relative;
+    animation: modalIn 0.25s;
+  }
+  
+  @keyframes modalIn {
+    from { transform: scale(0.85); opacity: 0.5; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .form-cita input,
+  .form-cita select {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .btn-reservar {
+    background: #d72638;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.7em 2em;
+    font-size: 1.1em;
+    margin-top: 0.7em;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.18s;
+  }
+  .btn-reservar:hover {
+    background: #1e2a78;
+  }
+  
+  .btn-cancelar {
+    background: #bbb;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.7em 2em;
+    font-size: 1.1em;
+    margin-left: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.18s;
+  }
+  .btn-cancelar:hover {
+    background: #d72638;
+  }
+  
+  .msg-exito {
+    color: #1e2a78;
+    font-weight: 700;
+    margin-top: 1em;
+    background: #d8ffde;
+    border-radius: 8px;
+    padding: 0.8em 0.5em;
+  }
+  
+  

@@ -1,0 +1,42 @@
+.admin-citas {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #222;
+    color: white;
+  }
+  
+  .logout-btn {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .btn-eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
